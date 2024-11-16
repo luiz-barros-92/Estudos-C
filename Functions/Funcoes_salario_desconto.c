@@ -22,7 +22,6 @@ int main() {
 }
 
 float calcular_salario_bruto(){
-    float salario_bruto = 0;
     float valor_hora = 0;
     float quantidade_horas = 0;
 
@@ -30,17 +29,17 @@ float calcular_salario_bruto(){
     scanf("%f", &valor_hora);
     printf("\nQuantidade de horas trabalhadas: ");
     scanf("%f", &quantidade_horas);
-
-    salario_bruto = valor_hora * quantidade_horas;
-    return salario_bruto;
+     
+    return valor_hora * quantidade_horas;
 }
 
 float calcular_desconto(float bruto){
     #define porcent_desconto 0.09
-    float desconto = bruto * porcent_desconto;
-    return desconto;
+    
+    return bruto * porcent_desconto;
 }
 
 float calcular_salario_liquido(float bruto, float desconto){
+    
     return bruto - desconto;
 }
